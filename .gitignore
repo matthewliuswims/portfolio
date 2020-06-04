@@ -1,0 +1,7 @@
+# generated site location when Jekyll is done transforming code
+_site
+# helps Jekyll keep track of which files have not been modified since the site was last built
+.jekyll-metadata
+.jekyll-cache
+
+.DS_STORE

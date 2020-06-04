@@ -1,0 +1,18 @@
+# Site settings
+title: Matthew's Portfolio
+email: matthew@matthewliu.net
+description: > # this means to ignore newlines until "baseurl:"
+  software engineer + web developer
+
+# on amplify this is not normally respected- see https://laptrinhx.com/build-and-publish-a-jekyll-powered-blog-easily-with-aws-amplify-73282137/
+baseurl: "" # the subpath of your site.
+
+url: "https://www.matthewliu.net" # the base hostname & protocol for your site
+
+# Social media profiles - feel free to add more here
+github_username: matthewliuswims
+
+# Build settings
+markdown: kramdown
+
+exclude: [vendor]

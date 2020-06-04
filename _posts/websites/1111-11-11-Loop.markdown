@@ -1,0 +1,10 @@
+---
+title: Loop
+layout: post
+img-title: Loop
+modalID: 9
+date: 2019-03-05
+project-date: April 2014
+category: websites
+---
+{% include descriptions/loop.html %}

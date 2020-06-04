@@ -1,0 +1,40 @@
+<style>
+    {% include css/style.css %}
+</style>
+
+<div class="descriptions" style="display: block; text-align: left">
+    <h3 style="text-align: center;">CoinCollect (Augmented Reality App) </h3><br>
+
+    <h3>Background</h3>
+    <ul>
+        <li><mark> As a team of 3, we produced a Augmented Reality App </mark> </li>
+        <li> I implemented the logic behind the real-world distance monitoring </li>
+        <li> It was a fun project, where I and everyone on the team wanted to simply tinker with Google's experimental AR Browsers </li>
+    </ul>
+    <br>
+    <h3>How the App Works</h3>
+    <ul>
+        <li>This is an Augmented Reality Game where the objective is to collect coins</li>
+        <li>Coins are collected by tapping on boxes; these boxes are randomly generated at the start</li>
+        <li>By getting physically close enough to a box, and then tapping the box on the phone screen, users can collect coins, and increase their score</li>
+        <li> Boxes that have already been touched (and gave out coins) turn from orange to red</li>
+    </ul><br>
+    <a href="{{ site.baseurl }}/img/thumbnails/Augmented.png"><img style="width: 95%" src="{{ site.baseurl }}/img/thumbnails/Augmented.png" title="Augmented on Console"/></a>
+    <h3>The Techonology</h3>
+    <ul>
+        <li>This uses Google's AR Browsers (not in production and are experimental), which expose functionality of ARCore and ARKit to the web: learn more <a href="https://github.com/google-ar/WebARonARCore">here</a>  </li>
+        <li>It's essentially a Chromium modification for Android Apps - the WebARonARCore is built on top of Android ARCore APK </li>
+        <li>We use this in conjunction with Three.ar.js (used for developing 3D objects) - docs for Three.ar.js are <a href="https://threejs.org/">here</a> </li>
+
+    </ul><br>
+    <h4>The App in Action</h4>
+     <a href="{{ site.baseurl }}/img/augmented/augmented.gif"><img src="{{ site.baseurl }}/img/augmented/augmented.gif" title="In Action"/></a>
+    <h3>Under the Hood </h3>
+    <ul>
+        <li>In our code, we setup the three.js rendering environment</li>
+        <li>Inside the render loop, called once per frame, we constantly check for collisions, by iterating through all the different cubes (which are in a group) and seeing if the camera is close enough to trigger an event </li>
+        <li>Boxes (or cubes) are randomly generated around the camera's 3D position </li>      
+    </ul><br>
+    <h4>Source Code:</h4>
+    <p class="descriptions"> <a href="https://github.com/matthewliuswims/collect-coins">https://github.com/matthewliuswims/collect-coins</a></p>
+</div>

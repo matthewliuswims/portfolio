@@ -1,0 +1,38 @@
+<style>
+    {% include css/style.css %}
+</style>
+
+<div class="descriptions" style="display: block; text-align: left">
+    <h3 style="text-align: center;">also known as Reversi</h3><br>
+    <h3>Background</h3>
+    <ul>
+        <li><mark> I made the fun, popular game, Othello, from scratch using the software platform JavaFX </mark> </li>
+        <li>Features a human vs. human player mode </li>
+        <li>Employs aritificial intelligence (using minimax algorithm) for the computer players </li>
+    </ul>
+    <h3>How the Game Works</h3>
+    <ul>
+        <li>Game can be played with human players or computer players (AI)</li>
+        <li>Game is set on a 8x8 grid; the game is played between 2 players</li>
+        <li>Each player moves in turns and the objective is to have as many tiles by the end (of your color)</li>
+        <li>A player can place a piece every turn - opponent's tiles are flipped by sandwiching them with your pieces</li>
+    </ul><br>
+    <a href="{{ site.baseurl }}/img/javafx/othello_vid_1.gif"><img src="{{ site.baseurl }}/img/javafx/othello_vid_1.gif" title="Othello Vid 1"/></a>
+    <h3>Under the hood</h3>
+    <ul>
+        <li>Setting up a stage, we instantiate a 2-D game board and used key handlers for user input.</li>
+        <li>We have a HumanPlayer and ComputerPlayer class which each handles its own logic - but they both implement a Player Interface</li>
+        <li>There is also a Referee class that handles when players should move and the legality of moves</li>
+        <li>To check for sandwiches, we have the referee class iterate through all the board pieces (for each move), checking in all 8 directions</li>
+        <li>For the ComputerClass, we have to use Artifical Intelligence, specifically MiniMax</li>
+    </ul><br>
+    <h4>Human Player vs Computer Player</h4>
+    <a href="{{ site.baseurl }}/img/javafx/othello_vid_2.gif"><img src="{{ site.baseurl }}/img/javafx/othello_vid_2.gif" title="Othello Vid 2"/></a>
+    <h3>Artifical Intelligence</h3>
+    <ul>
+        <li>The Computer Player determines the best move based upon a MiniMax Search, an adversial search, which means it tries to maximize its own score or lower the opponent's score</li>
+        <li>Each of the squares are assigned a value of importance (is a bit subjective, but the corner squares are worth more)</li>
+        <li>MiniMax has to create simulated boards to determine all the different possible outcomes - this requires a copy constructor</li>
+        <li>By weighing all the different moves - which means taking into account the difference in points between players - the AI Player will then choose the best move</li>
+    </ul><br>
+</div>

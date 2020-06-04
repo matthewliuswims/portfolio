@@ -1,0 +1,26 @@
+<style> {% include css/style.css %} </style>
+
+<div class = "descriptions" style="display: block; text-align: left;"> 
+
+	<h3>Background</h3>
+    <ul>
+        <li><mark> I made the fun, popular game, Tetris, from scratch using the software platform JavaFX </mark> </li>
+        <li>The especially fun/tricky aspects of the project to imeplement were coding the rotation of pieces and the clearing of lines </li>
+    </ul>
+   <h3>How the Game Works</h3>
+	<ul >
+		<li> 7 randomly generated pieces fall to the stage </li>
+		<li> Pieces can be shifted or rotated by pressing keys on the keyboard </li>
+		<li> Pressing the down key accelerates the motion of the piece; pressing space drops the piece </li>
+	</ul>
+	<br> 
+
+	<a href="{{ site.baseurl }}/img/javafx/tetris_vid.gif"><img src="{{ site.baseurl }}/img/javafx/tetris_vid.gif" title="made at imgflip.com"/></a>
+
+	<h3 style="text-align: center; border"> Under the hood</h3>
+	<ul >
+		<li> Each tetris piece is randomly generated, and each piece is composed of 4 wrapper square classes </li>
+		<li> The entire tetris board is implemented as a 2-D array</li>
+		<li> Inside our handle methods we have to calculate a variety of events (e.g. if the tetris piece tries to go out of the bounds of the board); we use a Timeline to animate the Piece going down </li>
+	</ul>
+</div>

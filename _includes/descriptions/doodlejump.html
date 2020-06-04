@@ -1,0 +1,27 @@
+<style> {% include css/style.css %} </style>
+
+<div class = "descriptions" style="display: block; text-align: left"> 
+
+	<h3>Background</h3>
+	 <ul>
+        <li><mark> I made the fun, (and once) popular game, Doodle Jump, from scratch using the software platform JavaFX </mark> </li>
+        <li>The especially fun/tricky aspects of the project to imeplement were coding the scrolling of the screen and the accleration (due to "gravity") of the doodle piece </li>
+   </ul>
+	<h3>How the Game Works</h3>
+	<ul >
+		<li> A doodle jumps up platforms - and tries to not fall into the abyss!  </li>
+		<li> As the doodle progresses upwards, the stage vertically scrolls </li>
+		<li> The player is able to interact with the doodle using arrow keys </li>
+	</ul>
+	<br> 
+
+	<a href="{{ site.baseurl }}/img/javafx/doodle_vid.gif"><img src="{{ site.baseurl }}/img/javafx/doodle_vid.gif" title="Doodle Jump"/></a>
+
+	<h3> Under the hood</h3>
+	<ul >
+		<li> Setting up a stage, we instantiate a game board and used key handlers for user input </li>
+		<li> Gravity and Quit Handlers implements the EventHandler Interface</li>
+		<li> We had a Game Class handle the logic of the game (e.g. add pieces to the pane) </li> 
+	  <li> Piece class (to make the different pieces) instantiated Square Objects from the Square Class </li>
+	</ul>
+</div>
