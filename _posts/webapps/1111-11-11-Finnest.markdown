@@ -1,0 +1,10 @@
+---
+layout: post
+title: Finnest App
+img-title: Finnest
+modalID: 2
+date: 2019-03-02
+category: webapps
+---
+
+{% include descriptions/Finnest.html %}
